@@ -1,0 +1,202 @@
++-------------+---------------------------------+----------------+----------+-------+-----------+
+| property_id | title                           | district       | size_sqm | rooms | price     |
++-------------+---------------------------------+----------------+----------+-------+-----------+
+|           2 | Renovated Altbau with balcony   | Charlottenburg |     86.5 |     3 | 695000.00 |
+|          15 | Classic Altbau, first occupancy | Charlottenburg |     91.0 |     3 | 760000.00 |
++-------------+---------------------------------+----------------+----------+-------+-----------+
++-----------------+----------+-----------+-----------------+
+| district        | listings | avg_price | avg_eur_per_sqm |
++-----------------+----------+-----------+-----------------+
+| Mitte           |        1 |   1250000 |           10593 |
+| Zehlendorf      |        1 |    985000 |            6937 |
+| Charlottenburg  |        2 |    727500 |            8193 |
+| Prenzlauer Berg |        2 |    645000 |            7885 |
+| Spandau         |        1 |    640000 |            5079 |
++-----------------+----------+-----------+-----------------+
++----------------+------------------+------------------+-----------------------------------+-----------------+------------------+------------------+------------+------------+
+| transaction_id | transaction_date | transaction_type | title                             | district        | client           | agent            | amount     | commission |
++----------------+------------------+------------------+-----------------------------------+-----------------+------------------+------------------+------------+------------+
+|              1 | 2025-03-14       | rental           | Modern studio, canal view         | Kreuzberg       | Elif Demir       | Jonas Weber      |    1150.00 |      34.50 |
+|              2 | 2025-04-18       | rental           | Quiet 3-room flat, courtyard      | Neukölln       | Marta Kowalska   | Aylin Kaya       |    1480.00 |      47.36 |
+|              3 | 2025-05-06       | sale             | Bright 2-room flat near Mauerpark | Prenzlauer Berg | Felix Braun      | Lena Hoffmann    |  408000.00 |   14280.00 |
+|              4 | 2025-05-09       | rental           | Loft office in converted factory  | Friedrichshain  | Clara Zimmermann | Aylin Kaya       |    4200.00 |     134.40 |
+|              5 | 2025-06-11       | rental           | Compact 1-room flat for commuters | Schöneberg     | Yuki Tanaka      | Sofia Rossi      |     890.00 |      24.92 |
+|              6 | 2025-07-03       | sale             | Family house with garden          | Zehlendorf      | Omar Haddad      | Jonas Weber      |  952000.00 |   28560.00 |
+|              7 | 2025-07-21       | rental           | Retail unit on high street        | Mitte           | Clara Zimmermann | Markus Schneider |    6500.00 |     260.00 |
+|              8 | 2025-08-01       | rental           | Garden-level 2-room flat          | Neukölln       | Nils Petersen    | Jonas Weber      |    1190.00 |      35.70 |
+|              9 | 2025-09-15       | sale             | Penthouse with roof terrace       | Mitte           | Julia Krüger    | Markus Schneider | 1215000.00 |   48600.00 |
+|             10 | 2025-10-10       | sale             | Sunny 4-room family flat          | Prenzlauer Berg | Felix Braun      | Lena Hoffmann    |  855000.00 |   29925.00 |
+|             11 | 2025-12-12       | sale             | Suburban duplex, newly built      | Spandau         | Tom Fischer      | Sofia Rossi      |  628000.00 |   17584.00 |
+|             12 | 2026-02-14       | rental           | Co-working floor, open plan       | Kreuzberg       | Clara Zimmermann | David Nowak      |    7700.00 |     231.00 |
++----------------+------------------+------------------+-----------------------------------+-----------------+------------------+------------------+------------+------------+
++------------------+-------+--------------+------------------+
+| agent            | deals | total_volume | total_commission |
++------------------+-------+--------------+------------------+
+| Markus Schneider |     2 |   1221500.00 |         48860.00 |
+| Lena Hoffmann    |     2 |   1263000.00 |         44205.00 |
+| Jonas Weber      |     3 |    954340.00 |         28630.20 |
+| Sofia Rossi      |     2 |    628890.00 |         17608.92 |
+| David Nowak      |     1 |      7700.00 |           231.00 |
+| Aylin Kaya       |     2 |      5680.00 |           181.76 |
++------------------+-------+--------------+------------------+
++------------------+------------------+--------------------------+------------+-----------+
+| transaction_date | transaction_type | title                    | district   | amount    |
++------------------+------------------+--------------------------+------------+-----------+
+| 2025-07-03       | sale             | Family house with garden | Zehlendorf | 952000.00 |
++------------------+------------------+--------------------------+------------+-----------+
++-------------+-----------------------------+-----------+-----------+
+| property_id | title                       | district  | status    |
++-------------+-----------------------------+-----------+-----------+
+|          11 | Co-working floor, open plan | Kreuzberg | rented    |
+|          14 | Corner shop with storage    | Wedding   | available |
++-------------+-----------------------------+-----------+-----------+
++------------------+-------------+---------------------+-----------------------------------------+
+| client           | client_type | viewing_date        | feedback                                |
++------------------+-------------+---------------------+-----------------------------------------+
+| Anna Becker      | buyer       | 2025-02-01 10:00:00 | Liked the location, price slightly high |
+| Tom Fischer      | buyer       | 2025-03-01 11:00:00 | Wants second viewing                    |
+| Tom Fischer      | buyer       | 2025-06-05 13:00:00 | Comparing with city options             |
+| Elif Demir       | tenant      | 2025-03-05 16:00:00 | Ready to apply                          |
+| Paul Wagner      | seller      | NULL                | NULL                                    |
+| Marta Kowalska   | tenant      | 2025-04-10 17:00:00 | Applying this week                      |
+| Felix Braun      | buyer       | 2025-02-03 14:30:00 | Very interested                         |
+| Felix Braun      | buyer       | 2025-07-02 10:00:00 | Family very keen                        |
+| Yuki Tanaka      | tenant      | 2025-05-15 09:30:00 | Perfect size                            |
+| Clara Zimmermann | landlord    | 2025-04-02 09:00:00 | Suits the startup team                  |
+| Clara Zimmermann | landlord    | 2025-04-25 12:00:00 | Negotiating rent                        |
+| Omar Haddad      | buyer       | 2025-03-20 10:30:00 | Garden too small                        |
+| Julia Krüger    | buyer       | 2025-05-10 15:00:00 | Loved the terrace                       |
+| Nils Petersen    | tenant      | 2025-07-12 18:00:00 | Good value                              |
+| Sara Lindberg    | buyer       | 2025-08-20 11:30:00 | Considering an offer                    |
++------------------+-------------+---------------------+-----------------------------------------+
++------------------+-----------------+
+| agent            | district        |
++------------------+-----------------+
+| Aylin Kaya       | Charlottenburg  |
+| Aylin Kaya       | Friedrichshain  |
+| Aylin Kaya       | Kreuzberg       |
+| Aylin Kaya       | Mitte           |
+| Aylin Kaya       | Neukölln       |
+| Aylin Kaya       | Prenzlauer Berg |
+| Aylin Kaya       | Schöneberg     |
+| Aylin Kaya       | Spandau         |
+| Aylin Kaya       | Wedding         |
+| Aylin Kaya       | Zehlendorf      |
+| David Nowak      | Charlottenburg  |
+| David Nowak      | Friedrichshain  |
+| David Nowak      | Kreuzberg       |
+| David Nowak      | Mitte           |
+| David Nowak      | Neukölln       |
+| David Nowak      | Prenzlauer Berg |
+| David Nowak      | Schöneberg     |
+| David Nowak      | Spandau         |
+| David Nowak      | Wedding         |
+| David Nowak      | Zehlendorf      |
+| Jonas Weber      | Charlottenburg  |
+| Jonas Weber      | Friedrichshain  |
+| Jonas Weber      | Kreuzberg       |
+| Jonas Weber      | Mitte           |
+| Jonas Weber      | Neukölln       |
+| Jonas Weber      | Prenzlauer Berg |
+| Jonas Weber      | Schöneberg     |
+| Jonas Weber      | Spandau         |
+| Jonas Weber      | Wedding         |
+| Jonas Weber      | Zehlendorf      |
+| Lena Hoffmann    | Charlottenburg  |
+| Lena Hoffmann    | Friedrichshain  |
+| Lena Hoffmann    | Kreuzberg       |
+| Lena Hoffmann    | Mitte           |
+| Lena Hoffmann    | Neukölln       |
+| Lena Hoffmann    | Prenzlauer Berg |
+| Lena Hoffmann    | Schöneberg     |
+| Lena Hoffmann    | Spandau         |
+| Lena Hoffmann    | Wedding         |
+| Lena Hoffmann    | Zehlendorf      |
+| Markus Schneider | Charlottenburg  |
+| Markus Schneider | Friedrichshain  |
+| Markus Schneider | Kreuzberg       |
+| Markus Schneider | Mitte           |
+| Markus Schneider | Neukölln       |
+| Markus Schneider | Prenzlauer Berg |
+| Markus Schneider | Schöneberg     |
+| Markus Schneider | Spandau         |
+| Markus Schneider | Wedding         |
+| Markus Schneider | Zehlendorf      |
+| Sofia Rossi      | Charlottenburg  |
+| Sofia Rossi      | Friedrichshain  |
+| Sofia Rossi      | Kreuzberg       |
+| Sofia Rossi      | Mitte           |
+| Sofia Rossi      | Neukölln       |
+| Sofia Rossi      | Prenzlauer Berg |
+| Sofia Rossi      | Schöneberg     |
+| Sofia Rossi      | Spandau         |
+| Sofia Rossi      | Wedding         |
+| Sofia Rossi      | Zehlendorf      |
++------------------+-----------------+
++---------------------------------+-----------------+-----------+
+| title                           | district        | price     |
++---------------------------------+-----------------+-----------+
+| Sunny 4-room family flat        | Prenzlauer Berg | 870000.00 |
+| Classic Altbau, first occupancy | Charlottenburg  | 760000.00 |
++---------------------------------+-----------------+-----------+
++------------------+-------------------+
+| agent            | commission_earned |
++------------------+-------------------+
+| Markus Schneider |          48860.00 |
++------------------+-------------------+
++---------+-------+------------+----------------+
+| month   | deals | volume     | agency_revenue |
++---------+-------+------------+----------------+
+| 2025-03 |     1 |    1150.00 |          34.50 |
+| 2025-04 |     1 |    1480.00 |          47.36 |
+| 2025-05 |     2 |  412200.00 |       14414.40 |
+| 2025-06 |     1 |     890.00 |          24.92 |
+| 2025-07 |     2 |  958500.00 |       28820.00 |
+| 2025-08 |     1 |    1190.00 |          35.70 |
+| 2025-09 |     1 | 1215000.00 |       48600.00 |
+| 2025-10 |     1 |  855000.00 |       29925.00 |
+| 2025-12 |     1 |  628000.00 |       17584.00 |
+| 2026-02 |     1 |    7700.00 |         231.00 |
++---------+-------+------------+----------------+
++---------+------------------+-------+------------+----------------+
+| quarter | transaction_type | deals | volume     | agency_revenue |
++---------+------------------+-------+------------+----------------+
+| 2025-Q1 | rental           |     1 |    1150.00 |          34.50 |
+| 2025-Q2 | sale             |     1 |  408000.00 |       14280.00 |
+| 2025-Q2 | rental           |     3 |    6570.00 |         206.68 |
+| 2025-Q3 | sale             |     2 | 2167000.00 |       77160.00 |
+| 2025-Q3 | rental           |     2 |    7690.00 |         295.70 |
+| 2025-Q4 | sale             |     2 | 1483000.00 |       47509.00 |
+| 2026-Q1 | rental           |     1 |    7700.00 |         231.00 |
++---------+------------------+-------+------------+----------------+
++------+-------+------------+----------------+---------------+
+| year | deals | volume     | agency_revenue | avg_deal_size |
++------+-------+------------+----------------+---------------+
+| 2025 |    11 | 4073410.00 |      139485.88 |        370310 |
+| 2026 |     1 |    7700.00 |         231.00 |          7700 |
++------+-------+------------+----------------+---------------+
++-----------------+------------------------------+------------+---------------+
+| district        | title                        | amount     | buyer         |
++-----------------+------------------------------+------------+---------------+
+| Zehlendorf      | Family house with garden     |  952000.00 | Omar Haddad   |
+| Mitte           | Penthouse with roof terrace  | 1215000.00 | Julia Krüger |
+| Prenzlauer Berg | Sunny 4-room family flat     |  855000.00 | Felix Braun   |
+| Spandau         | Suburban duplex, newly built |  628000.00 | Tom Fischer   |
++-----------------+------------------------------+------------+---------------+
++-------------+---------------------------------+-----------+
+| property_id | title                           | status    |
++-------------+---------------------------------+-----------+
+|          15 | Classic Altbau, first occupancy | available |
++-------------+---------------------------------+-----------+
++----------------+-----------+------------+--------+
+| transaction_id | amount    | commission | status |
++----------------+-----------+------------+--------+
+|             13 | 748000.00 |   22440.00 | sold   |
++----------------+-----------+------------+--------+
++--------+-------------+------------+------------+---------------------+
+| log_id | property_id | old_status | new_status | changed_at          |
++--------+-------------+------------+------------+---------------------+
+|     13 |          15 | available  | sold       | 2026-09-19 13:21:12 |
+|     12 |          11 | available  | rented     | 2026-09-19 13:20:48 |
+|     11 |          10 | available  | sold       | 2026-09-19 13:20:48 |
++--------+-------------+------------+------------+---------------------+
